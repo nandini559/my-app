@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const Index = () => {
-  return (
-    <div><p>index</p></div>
-  )
-}
-
-export default Index
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <h1>Hello, World!</h1>
+  </React.StrictMode>
+);
